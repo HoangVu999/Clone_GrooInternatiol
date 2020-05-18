@@ -10,6 +10,9 @@
                     .img-responsive {
                         width: 120px;
                         height: auto;
+                        img {
+                            filter: unset;
+                        }
                     }
                 }
             }

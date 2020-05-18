@@ -16,6 +16,24 @@ body .fa {
   font-size: inherit;
   text-rendering: auto;
 }
+body p {
+  margin: 0 0 10px;
+}
+body .sup_bottompadder30 {
+  padding-bottom: 30px;
+}
+body .sup_toppadder80 {
+  padding-top: 80px;
+}
+body .sup_bottompadder100 {
+  padding-bottom: 100px;
+}
+body .sup_toppadder100 {
+  padding-top: 100px;
+}
+body .sup_bottompadder60 {
+  padding-bottom: 60px;
+}
 
 header .sup_topheader {
   padding: 30px;
@@ -31,6 +49,9 @@ header .sup_topheader .sup_logo a {
 header .sup_topheader .sup_logo a .img-responsive {
   width: 120px;
   height: auto;
+}
+header .sup_topheader .sup_logo a .img-responsive img {
+  filter: unset;
 }
 header .sup_topheader .pull-right {
   float: right;
@@ -145,22 +166,48 @@ header .sup_mainheader .top-search-wrap form button {
   border: none;
 }
 
-.sup_heading {
+.sup_counter_section {
   float: left;
   width: 100%;
+  background-image: linear-gradient(0, #00000033, #000000b5), url(../images/number_bg.png);
+  position: relative;
+  background-attachment: fixed;
 }
-.sup_heading h4 {
+.sup_counter_section .sup_counter {
   float: left;
   width: 100%;
-  margin-top: 0;
-  color: #211f20;
+  text-align: center;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+.sup_counter_section .sup_counter span {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #fff;
+  background: #fff;
+  line-height: 70px;
+  position: relative;
+  border-radius: 100%;
+  transition: all 0.2s;
+}
+.sup_counter_section .sup_counter h1 {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 40px 0px 20px;
+  font-weight: 400;
+}
+.sup_counter_section .sup_counter p {
+  float: left;
+  width: 100%;
+  margin: 0;
+  color: #fff;
   text-transform: uppercase;
-  font-weight: bold;
-  padding-bottom: 20px;
-  font-size: 25px;
+  font-weight: 400;
 }
-
-.sup_title_border {
+.sup_counter_section .sup_counter .sup_title_border {
   display: inline-block;
   height: 1px;
   background: #31aae1;
@@ -168,7 +215,7 @@ header .sup_mainheader .top-search-wrap form button {
   position: relative;
   margin-bottom: 30px;
 }
-.sup_title_border::before {
+.sup_counter_section .sup_counter .sup_title_border:before {
   position: absolute;
   content: "";
   width: 5px;
@@ -179,23 +226,217 @@ header .sup_mainheader .top-search-wrap form button {
   border-radius: 100%;
 }
 
-.sup_bottompadder30 {
-  padding-bottom: 30px;
+.sup_transparent {
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.sup_transparent .sup_heading {
+  float: left;
+  width: 100%;
+}
+.sup_transparent .sup_heading h4 {
+  float: left;
+  width: 100%;
+  margin-top: 0;
+  color: #211f20;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.sup_transparent .sup_heading .sup_title_border {
+  display: inline-block;
+  height: 1px;
+  background: #31aae1;
+  padding: 1px 20px 0px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.sup_transparent .sup_heading .sup_title_border:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #31aae1;
+  left: 0;
+  top: -2px;
+  border-radius: 100%;
+}
+.sup_transparent .img-responsive img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.sup_transparent .recruitment__title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #211f20;
+  margin: 0 0 20px 0;
+}
+.sup_transparent .recruitment__content {
+  padding: 0 0 20px 0;
+  color: #211f20;
+}
+.sup_transparent .recruitment__content .g-icon {
+  width: 20px;
+  height: 20px;
+}
+.sup_transparent .sup_btn {
+  text-decoration: none;
+  border-radius: 0;
+  height: 36px;
+  padding: 0px 49px 0px 19px;
+  text-transform: capitalize;
+  font-weight: 300;
+  position: relative;
+  transition: all 0.3s;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 35px;
+  z-index: 3;
+  position: relative;
+  border: none;
+}
+.sup_transparent .sup_btn:hover {
+  cursor: pointer;
+}
+.sup_transparent .sup_black_btn {
+  background: #fff;
+  color: #211f20;
+  border: 1px solid gray;
+}
+.sup_transparent .sup_black_btn span {
+  border-radius: 0;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  transition: all 0.3s ease-out;
+  z-index: 1;
 }
 
-.text-center {
+.sup_get_started_section {
+  float: left;
+  width: 100%;
+  background-image: url(../images/add_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #31aae1;
+  position: relative;
+}
+.sup_get_started_section .sup_get_started_data {
+  float: left;
+  width: 100%;
+  text-align: right;
+  padding: 93px 45px 93px 0;
+  position: relative;
+}
+.sup_get_started_section .sup_get_started_data h2 {
+  float: left;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.sup_get_started_section .sup_get_started_data p {
+  float: left;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.sup_get_started_section .sup_mobile_img {
+  float: left;
+  width: 100%;
+}
+.sup_get_started_section .sup_mobile_img img {
+  position: absolute;
+  top: -94px;
+  right: 160px;
+  filter: unset;
+}
+.sup_get_started_section .sup_mobile_img a {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  width: 170px;
+  height: 115px;
+  line-height: 30px;
+  background: #fff;
+  text-align: center;
+  color: #31aae1;
+}
+.sup_get_started_section .sup_mobile_img a i {
+  margin-top: 24px;
+  float: left;
+  width: 100%;
+  font-size: 25px;
+}
+.sup_get_started_section .sup_mobile_img a span {
+  width: 100%;
+  float: left;
+  line-height: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.sup-transparent {
+  /* carousel */
+  /* Previous button  */
+  /* Next button  */
+  /* Changes the position of the indicators */
+  /* Changes the colour of the indicators */
+  /* End carousel */
+}
+.sup-transparent .sup_bottompadder30 {
+  margin-top: 100px;
+}
+.sup-transparent .sup_heading {
+  float: left;
+  width: 100%;
+}
+.sup-transparent .sup_heading h4 {
+  float: left;
+  width: 100%;
+  margin-top: 0;
+  color: #211f20;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+.sup-transparent .sup_title_border {
+  display: inline-block;
+  height: 1px;
+  background: #31aae1;
+  padding: 1px 20px 0px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.sup-transparent .sup_title_border::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #31aae1;
+  left: 0;
+  top: -2px;
+  border-radius: 100%;
+}
+.sup-transparent .text-center {
   text-align: center;
 }
-
-/* carousel */
-.media-carousel {
+.sup-transparent .media-carousel {
   margin-bottom: 0;
   padding: 0 40px 30px 40px;
   margin-top: 30px;
 }
-
-/* Previous button  */
-.media-carousel .carousel-control.left {
+.sup-transparent .media-carousel .carousel-control.left {
   left: -12px;
   background-image: none;
   background: none repeat scroll 0 0 #222222;
@@ -203,11 +444,9 @@ header .sup_mainheader .top-search-wrap form button {
   border-radius: 23px 23px 23px 23px;
   height: 40px;
   width: 40px;
-  margin-top: 30px;
+  margin-top: 55px;
 }
-
-/* Next button  */
-.media-carousel .carousel-control.right {
+.sup-transparent .media-carousel .carousel-control.right {
   right: -12px !important;
   background-image: none;
   background: none repeat scroll 0 0 #222222;
@@ -215,36 +454,30 @@ header .sup_mainheader .top-search-wrap form button {
   border-radius: 23px 23px 23px 23px;
   height: 40px;
   width: 40px;
-  margin-top: 30px;
+  margin-top: 55px;
 }
-
-/* Changes the position of the indicators */
-.media-carousel .carousel-indicators {
+.sup-transparent .media-carousel .carousel-indicators {
   right: 50%;
   top: auto;
   bottom: 0px;
   margin-right: -19px;
 }
-
-/* Changes the colour of the indicators */
-img {
+.sup-transparent img {
   width: 250px;
-  height: 250px;
+  height: 150px;
   width: auto;
   display: inline-block;
   filter: grayscale(1);
 }
-img:hover {
+.sup-transparent img:hover {
   filter: unset;
 }
-
-.sup_client {
+.sup-transparent .sup_client {
   float: left;
   width: 100%;
   text-align: center;
 }
 
-/* End carousel */
 footer .sup_follow_on_section {
   float: left;
   width: 100%;

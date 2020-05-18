@@ -1,22 +1,50 @@
 * {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 16px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    color: #999999;
-    .fa {
-        display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-    }
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: #999999;
+
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+  }
+
+  p {
+    margin: 0 0 10px;
+  }
+
+  .sup_bottompadder30 {
+    padding-bottom: 30px;
+  }
+
+  .sup_toppadder80 {
+    padding-top: 80px;
+  }
+
+  .sup_bottompadder100 {
+    padding-bottom: 100px;
+  }
+
+  .sup_toppadder100 {
+    padding-top: 100px;
+  }
+
+  .sup_bottompadder60 {
+    padding-bottom: 60px;
+  }
 }
 
 @import "./header.scss";
-@import"./index-content/sup_transparent.scss";
-@import"./footer.scss";
+@import "./sup_counter_section.scss";
+@import "./sup_transparent_1.scss";
+@import "./sup_get_started_section.scss";
+@import "./sup-transparent.scss";
+@import "./footer.scss";
