@@ -1,0 +1,139 @@
+    header {
+        .sup_topheader {
+            padding: 30px;
+            border-bottom: 1px solid #ebebeb;
+            .sup_logo {
+                float: left;
+                width: 100%;
+                a {
+                    display: inline-block;
+                    .img-responsive {
+                        width: 120px;
+                        height: auto;
+                    }
+                }
+            }
+            .pull-right {
+                float: right;
+                .sup_social_link {
+                    float: right;
+                    width: auto;
+                    ul {
+                        float: right;
+                        width: auto;
+                        padding: 0;
+                        margin: 0px;
+                        li {
+                            display: inline-block;
+                            list-style-type: none;
+                            padding-left: 10px;
+                            a {
+                                float: left;
+                                width: 30px;
+                                height: 30px;
+                                text-align: center;
+                                position: relative;
+                                line-height: 30px;
+                                text-decoration: none;
+                                border-radius: 100%;
+                                color: #717171;
+                                transition: all 0.5s;
+                                opacity: 0.3;
+                                &:hover {
+                                    filter: unset;
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sup_mainheader {
+            .navbar-default {
+                background-color: transparent;
+                border-color: transparent;
+                margin-bottom: 0px;
+                min-height: 20px;
+                .sup_menumain_div {
+                    float: left;
+                    width: 100%;
+                    position: relative;
+                    transition: all 0.5s;
+                    .sup_mainmenu {
+                        ul {
+                            li {
+                                padding: 30px 0px;
+                                padding-right: 40px;
+                                a {
+                                    color: #888888;
+                                    text-decoration: none;
+                                    text-transform: capitalize;
+                                    padding: 0px 0px 10px 0px;
+                                    position: relative;
+                                    transition: all 0.25s;
+                                    background-color: transparent;
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        width: 5px;
+                                        height: 5px;
+                                        background: transparent;
+                                        border-radius: 100%;
+                                        left: 5px;
+                                        top: 100%;
+                                    }
+                                    &::after {
+                                        position: absolute;
+                                        content: '';
+                                        height: 1px;
+                                        background: #31aae1;
+                                        top: 105%;
+                                        left: 10px;
+                                    }
+                                    &:hover {
+                                        color: #31aae1;
+                                    }
+                                }
+                            }
+                            .active {
+                                a {
+                                    background-color: transparent;
+                                    color: #31aae1;
+                                    &::before {
+                                        background: #31aae1;
+                                        transition: all 0.2s;
+                                    }
+                                    &::after {
+                                        width: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top-search-wrap {
+                float: right;
+                padding-left: 17px;
+                padding-top: 30px;
+                padding-bottom: 37px;
+                form {
+                    input {
+                        position: relative;
+                        padding: 3px 10px;
+                        border-radius: 20px;
+                        border: none;
+                        border: 1px solid #888888;
+                    }
+                    button {
+                        position: absolute;
+                        top: 33px;
+                        right: 25px;
+                        background: none;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }

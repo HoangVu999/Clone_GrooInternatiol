@@ -1,0 +1,159 @@
+footer {
+    .sup_follow_on_section {
+        float: left;
+        width: 100%;
+        background: #ebebeb;
+        .sup_followon {
+            float: left;
+            width: 100%;
+            position: relative;
+            background: #31aae1;
+            padding: 40px 0px;
+            h5 {
+                float: left;
+                width: 100%;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-left: 30px;
+                margin: 0px;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 15px solid #31aae1;
+                left: 30px;
+                bottom: -14px;
+                z-index: 1;
+            }
+        }
+    }
+    .sup_footer {
+        float: left;
+        width: 100%;
+        background: #151515;
+        .sup_leftpadder0 {
+            padding-left: 0;
+            .map-bottom {
+                width: 100%;
+                height: 450px;
+            }
+        }
+        .sup_bottompadder40 {
+            padding-bottom: 40px;
+            .sup_footer_widget {
+                float: left;
+                width: 100%;
+                a {
+                    display: inline-block;
+                    img {
+                        margin-bottom: 50px;
+                    }
+                }
+                p {
+                    float: left;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                span {
+                    float: left;
+                    width: 100%;
+                    a {
+                        float: left;
+                        position: relative;
+                        color: #666666;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        padding-right: 20px;
+                        width: auto;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 30px;
+                            height: 1px;
+                            background: #31aae1;
+                            top: 13px;
+                            left: 100%;
+                            transition: all 0.5s;
+                        }
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            width: 5px;
+                            height: 5px;
+                            background: #31aae1;
+                            border-radius: 100%;
+                            left: 130%;
+                            top: 50%;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+        .sup_toppadder80 {
+            padding-top: 80px;
+        }
+    }
+    .sup_bottom_footer {
+        float: left;
+        width: 100%;
+        background: #181818;
+        position: relative;
+        .sup_copyright {
+            float: left;
+            width: 100%;
+            padding: 20px 0px;
+            padding-right: 15px;
+            p {
+                float: left;
+                width: 90%;
+                margin: 0;
+                line-height: 35px;
+                font-size: 14px;
+                color: #666666;
+                font-weight: 400;
+            }
+            a {
+                float: right;
+                color: #666666;
+                font-size: 25px;
+            }
+        }
+        .sup_footer_sociallink {
+            float: left;
+            width: 100%;
+            padding: 26px 0;
+            padding-left: 40px;
+            position: relative;
+            z-index: 1;
+            ul {
+                float: left;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                li {
+                    float: left;
+                    list-style: none;
+                    padding-right: 15px;
+                    a {
+                        color: #666;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .sup_blackbg2 {
+            position: absolute;
+            right: 0;
+            width: 50%;
+            top: 0;
+            height: 100%;
+            background: #111;
+        }
+    }
+}
